@@ -8,12 +8,16 @@
     <!-- Use a more specific version of Tailwind CSS if needed -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <!--DarkmodeScriptAndStyle-->
+    <script defer src="javascript/darkmodebutton.js"></script>
+    <link rel="stylesheet" href="css/darkmodebutton.css">
 </head>
 
 <body class="font-sans bg-gray-100 text-gray-800">
     <header class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center fixed w-full">
         <h1 class="text-xl font-bold animate-pulse">CarMeet</h1>
         <a href="#" class="text-sm font-medium hover:underline ml-auto">Learn More</a>
+        <button id="toggleDarkMode" class="text-sm font-medium hover:underline"style="margin-left: 10px">🌓</button>
     </header>
 
     <main class="flex flex-col items-center justify-center min-h-screen pt-16">
@@ -61,6 +65,7 @@
     <footer class="bg-gray-800 text-white py-4 px-6 text-center">
         © 2023 CarMeet. All rights reserved.
     </footer>
+
 </body>
 
 </html>
