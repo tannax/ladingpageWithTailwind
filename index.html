@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Landing Page with Animations</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page with Animations</title>
+    <!-- Use a more specific version of Tailwind CSS if needed -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <header class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center fixed w-full">
-    <h1 class="text-xl font-bold animate-pulse">Potato Brand Name</h1>
-    <a href="#" class="text-sm font-medium hover:underline">Learn More</a>
-  </header>
-  <main class="flex flex-col items-center justify-center min-h-screen">
-    <section class="text-center my-10">
-      <h2 class="text-3xl font-bold mb-5 animate-fadeInDown">Welcome to Your Solution</h2>
-      <p class="text-lg leading-relaxed text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </section>
-    <section class="grid grid-cols-2 gap-4 mb-10">
-      <div class="p-4 rounded-lg bg-gray-100 shadow-md animate-hover:scale-95 transition-transform duration-300 ease-in-out">
-        <h3 class="text-xl font-bold mb-2">Feature 1</h3>
-        <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="p-4 rounded-lg bg-gray-100 shadow-md animate-hover:scale-95 transition-transform duration-300 ease-in-out">
-        <h3 class="text-xl font-bold mb-2">Feature 2</h3>
-        <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </section>
-    <section class="text-center mb-10">
-      <a href="#" class="inline-block px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 animate-pulse">Get Started</a>
-    </section>
-  </main>
-  <footer class="bg-gray-800 text-white py-4 px-6 text-center">
-    © 2023 Potato Brand Name. All rights reserved.
-  </footer>
+
+<body class="font-sans bg-gray-100 text-gray-800">
+    <header class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center fixed w-full">
+        <h1 class="text-xl font-bold animate-pulse">CarMeet</h1>
+        <a href="#" class="text-sm font-medium hover:underline ml-auto">Learn More</a>
+    </header>
+
+    <main class="flex flex-col items-center justify-center min-h-screen pt-16">
+        <!-- Welcome Section -->
+        <section class="text-center my-10">
+            <h2 class="text-3xl font-bold mb-5 animate-fadeInDown">Welcome to CarMeet</h2>
+            <p class="text-lg leading-relaxed text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+            <div class="flex flex-col">
+                <!-- ClassicCars -->
+                <div class="feature-card">
+                    <img src="img/classiccars/classcar1.jpg" alt="Classic Car 1"
+                        class="rounded-lg shadow-md mb-2 w-full object-cover">
+                    <h3 class="text-xl font-bold mb-2">Classic Cars</h3>
+                    <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <!-- JapaneseCars -->
+                <div class="feature-card">
+                    <img src="img/japanesecars/car1.jpg" alt="Japanese Car 1"
+                        class="rounded-lg shadow-md mb-2 w-full object-cover">
+                    <h3 class="text-xl font-bold mb-2">Japanese Cars</h3>
+                    <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Started Section -->
+        <section class="text-center mb-10">
+            <a href="#"
+                class="inline-block px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 animate-pulse">Get
+                Started</a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4 px-6 text-center">
+        © 2023 CarMeet. All rights reserved.
+    </footer>
 </body>
+
 </html>
