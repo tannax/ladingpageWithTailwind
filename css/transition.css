@@ -1,0 +1,69 @@
+/* transition.css */
+
+.transition-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff; /* Set the background color as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.transition-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Modal Container */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    z-index: 1000; /* Ensure the modal is on top of other elements */
+}
+
+/* Modal Image */
+.modal-image {
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh;
+    border-radius: 8px;
+    filter: blur(2px);
+}
+
+/* Prevent the image from triggering the modal close */
+.modal-image:focus {
+    outline: none;
+}
+.modal-title {
+    position: absolute;
+    top: 50%;
+    right: 10%; /* Adjust the right position as needed */
+    transform: translate(0, -50%);
+    font-size: 2rem; /* Adjust the font size as needed */
+    color: #fff; /* Set the color to your preference */
+}

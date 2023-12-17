@@ -2,3 +2,8 @@ body.dark-mode {
     background-color: #1a202c; /* Dark background color */
     color: #ffffff; /* Light text color */
 }
+
+#toggleDarkMode {
+    text-decoration: none;
+    margin-left: 10px;
+}

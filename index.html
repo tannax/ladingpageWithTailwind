@@ -8,6 +8,9 @@
     <!-- Use a more specific version of Tailwind CSS if needed -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/transition.css">
+    <script defer src="javascript/transition.js"></script>
+
     <!--DarkmodeScriptAndStyle-->
     <script defer src="javascript/darkmodebutton.js"></script>
     <link rel="stylesheet" href="css/darkmodebutton.css">
@@ -17,7 +20,7 @@
     <header class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center fixed w-full">
         <h1 class="text-xl font-bold animate-pulse">CarMeet</h1>
         <a href="#" class="text-sm font-medium hover:underline ml-auto">Learn More</a>
-        <button id="toggleDarkMode" class="text-sm font-medium hover:underline"style="margin-left: 10px">🌓</button>
+        <button id="toggleDarkMode" class="text-sm font-medium hover:underline" style="margin-left: 10px">🌓</button>
     </header>
 
     <main class="flex flex-col items-center justify-center min-h-screen pt-16">
@@ -30,28 +33,45 @@
             </p>
         </section>
 
-        <!-- Features Section -->
-        <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-            <div class="flex flex-col">
-                <!-- ClassicCars -->
-                <div class="feature-card">
-                    <img src="img/classiccars/classcar1.jpg" alt="Classic Car 1"
-                        class="rounded-lg shadow-md mb-2 w-full object-cover">
-                    <h3 class="text-xl font-bold mb-2">Classic Cars</h3>
-                    <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
+      <!-- Features Section -->
+<section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+    <div class="flex flex-col">
+        <!-- ClassicCars -->
+        <a href="index.html" class="feature-card" data-src="#destination1">
+            <img src="img/classiccars/classcar1.jpg" alt="Classic Car 1" class="rounded-lg shadow-md mb-2 w-full object-cover">
+            <h3 class="text-xl font-bold mb-2">Classic Cars</h3>
+            <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+    </div>
 
-            <div class="flex flex-col">
-                <!-- JapaneseCars -->
-                <div class="feature-card">
-                    <img src="img/japanesecars/car1.jpg" alt="Japanese Car 1"
-                        class="rounded-lg shadow-md mb-2 w-full object-cover">
-                    <h3 class="text-xl font-bold mb-2">Japanese Cars</h3>
-                    <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </section>
+    <div class="flex flex-col">
+        <!-- JapaneseCars -->
+        <a href="#" class="feature-card" data-src="#destination2">
+            <img src="img/japanesecars/car1.jpg" alt="Japanese Car 1" class="rounded-lg shadow-md mb-2 w-full object-cover">
+            <h3 class="text-xl font-bold mb-2">Japanese Cars</h3>
+            <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+    </div>
+
+    <div class="flex flex-col">
+        <!-- MuscleCars -->
+        <a href="#" class="feature-card" data-src="#destination3">
+            <img src="img/musclecars/musclecar1.jpg" alt="Muscle Car 1" class="rounded-lg shadow-md mb-2 w-full object-cover">
+            <h3 class="text-xl font-bold mb-2">Muscle Cars</h3>
+            <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+    </div>
+
+    <div class="flex flex-col">
+        <!-- TunedCars -->
+        <a href="#" class="feature-card" data-src="#destination4">
+            <img src="img/tunedcars/tunedcar1.jpg" alt="Tuned Car 1" class="rounded-lg shadow-md mb-2 w-full object-cover">
+            <h3 class="text-xl font-bold mb-2">Tuned Cars</h3>
+            <p class="text-md text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+    </div>
+</section>
+
 
         <!-- Get Started Section -->
         <section class="text-center mb-10">
@@ -66,6 +86,10 @@
         © 2023 CarMeet. All rights reserved.
     </footer>
 
+    <!--transition-->
+    <div class="transition-container">
+        <div class="transition-image"></div>
+    </div>
 </body>
 
 </html>
